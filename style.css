@@ -1,6 +1,12 @@
 
-        body{font-family: 'Rubik', sans-serif;
-          background-color: aqua;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(compass/css3);
+
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+       body{font-family: 'Rubik', sans-serif;
+          /* background-color: aqua; */
             color: #fff;  
             line-height: 1.7;
             overflow-x: hidden;   
@@ -9,7 +15,8 @@
             padding: 0;
             display: block;
             align-items: center;
-            background: linear-gradient(Red,purple );
+            /* background: linear-gradient(brown,grey ); */
+            background: #333 url(http://drewthorson.com/star-tile-far-away.jpg)
             }
             .brief{align-items: center;
                }
@@ -19,18 +26,334 @@ text-decoration: underline;}
  p{color: white;
 font-family: Arial, Helvetica, sans-serif;}
  h1{font-size: 55px;
-    background: linear-gradient(to right, #ff8a00, #e52e71);
-color: blueviolet;}
+    background: -webkit-linear-gradient(yellow, green );
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+    text-decoration:underline;
+    animation: glitch 3s steps(100) infinite;
+    font-size: 3em;
+    text-align: center;
+}
 /* a{color: black;} */
 img{background-color: rgb(0, 243, 243);
 width: 300px;
-height: 300px;}
+height: 300px;
+object-fit: cover;}
 
 a {
     color: indigo;
 }
 a:hover{color: #ff8a00;}
 img{border-radius: 999px;}
+@media (min-width: 480px) {
+    h1 {
+      font-size: 6em;
+    }
+  }
+  
+   @keyframes glitch {  
+    0% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    1% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    2% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    3% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    4% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    5% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    6% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    7% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    8% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    9% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    10% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    11% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    12% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    13% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    14% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    15% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    16% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    17% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    18% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    19% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    20% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    21% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    22% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    23% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    24% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    25% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    26% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+    27% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0.5px);}
+    28% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    29% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    30% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    31% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    32% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    33% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    34% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    35% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+    36% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+    37% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0.5px);}
+    38% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    39% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    40% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    41% { text-shadow: 45px 0 0 #0c33f5, -45px 0 0 lime; filter: blur(0);}
+    42% { text-shadow: 0 0 0 #0c33f5, 0 0 0 lime; filter: blur(0);}
+    43% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    44% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    45% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    46% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    47% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+    48% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    49% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    50% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    51% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    52% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    53% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    54% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    55% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0.5px);}
+    56% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+    57% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+    58% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    59% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    60% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    61% { text-shadow: 30px 0 0 red, -30px 0 0 lime; filter: blur(0);}
+    62% { text-shadow: 0 0 0 red, 0 0 0 lime; filter: blur(0);}
+    63% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+    64% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+    65% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0);}
+    66% { text-shadow: 1px 0 0 red, -1px 0 0 #0c33f5; filter: blur(0.5px);}
+    67% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0.5px);}
+    68% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    69% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    70% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    71% { text-shadow: 50px 0 0 red, -50px 0 0 #0c33f5; filter: blur(0);}
+    72% { text-shadow: 0 0 0 red, 0 0 0 #0c33f5; filter: blur(0);}
+    73% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    74% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    75% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    76% { text-shadow: 3px 0 0 red, -3px 0 0 #0c33f5; filter: blur(0);}
+    77% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    78% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    79% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    80% { text-shadow: -3px 0 0 red, 3px 0 0 #0c33f5; filter: blur(0);}
+    81% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    82% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0);}
+    83% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    84% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    85% { text-shadow: 1px 0 0 red, -1px 0 0 lime; filter: blur(0.5px);}
+    86% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+    87% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0.5px);}
+    88% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    89% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    90% { text-shadow: -3px 0 0 red, 3px 0 0 lime; filter: blur(0);}
+    91% { text-shadow: 60px 0 0 lime, -60px 0 0 #0c33f5; filter: blur(0);}
+    92% { text-shadow: 0 0 0 lime, 0 0 0 #0c33f5; filter: blur(0);}
+    92% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    93% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    94% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    95% { text-shadow: 0.8px 0 0 #0c33f5, -0.8px 0 0 lime; filter: blur(0);}
+    96% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    97% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    98% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    99% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);}
+    100% { text-shadow: -3px 0 0 #0c33f5, 3px 0 0 lime; filter: blur(0);} }  
+    
+    
+ .border{
+  border-top: 2px white solid;
+  height: 3px;
+  width: 100%;
+  margin: 30px 0;
+ }   
+ * {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+li {
+	display: block;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+}
+
+
+.sun {
+	position: relative;
+	margin: 200px auto;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: yellow;
+	list-style: none;
+}
+
+.sun div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 50%;
+}
+
+.mercury {
+	width: 2px;
+	height: 2px;
+	background: red;
+}
+
+.sun li:nth-child(1) {
+	width: 40px;
+	height: 40px;
+    -webkit-animation: 
+        rota 5s linear infinite;
+    -moz-animation: 
+        rota 5s linear infinite;
+    -ms-animation: 
+        rota 5s linear infinite;
+    -o-animation: 
+        rota 5s linear infinite;
+    animation: 
+        rota 5s linear infinite;
+}
+
+.venus {
+	width: 8px;
+	height: 8px;
+	background: yellow;
+}
+
+.sun li:nth-child(2) {
+	width: 70px;
+	height: 70px;
+    -webkit-animation: 
+        rota 10s linear infinite;
+    -moz-animation: 
+        rota 10s linear infinite;
+    -ms-animation: 
+        rota 10s linear infinite;
+    -o-animation: 
+        rota 10s linear infinite;
+    animation: 
+        rota 10s linear infinite;
+}
+
+.earth {
+	width: 10px;
+	height: 10px;
+	background: green;
+}
+
+.sun li:nth-child(3) {
+	width: 100px;
+	height: 100px;
+    -webkit-animation: 
+        rota 12s linear infinite;
+    -moz-animation: 
+        rota 12s linear infinite;
+    -ms-animation: 
+        rota 12s linear infinite;
+    -o-animation: 
+        rota 12s linear infinite;
+    animation: 
+        rota 12s linear infinite;
+}
+
+.mars {
+	width: 3px;
+	height: 3px;
+	background: red;
+}
+
+.sun li:nth-child(4) {
+	width: 150px;
+	height: 150px;
+    -webkit-animation: 
+        rota 16s linear infinite;
+    -moz-animation: 
+        rota 16s linear infinite;
+    -ms-animation: 
+        rota 16s linear infinite;
+    -o-animation: 
+        rota 16s linear infinite;
+    animation: 
+        rota 16s linear infinite;
+}
+
+.jupiter {
+	width: 30px;
+	height: 30px;
+	background: orange;
+}
+
+.sun li:nth-child(5) {
+	width: 520px;
+	height: 520px;
+    -webkit-animation: 
+        rota 25s linear infinite;
+    -moz-animation: 
+        rota 25s linear infinite;
+    -ms-animation: 
+        rota 25s linear infinite;
+    -o-animation: 
+        rota 25s linear infinite;
+    animation: 
+        rota 25s linear infinite;
+}
+
+.saturn {
+	width: 20px;
+	height: 20px;
+	background: white;
+}
+
+.sun li:nth-child(6) {
+	width: 950px;
+	height: 950px;
+    -webkit-animation: 
+        rota 50s linear infinite;
+    -moz-animation: 
+        rota 50s linear infinite;
+    -ms-animation: 
+        rota 50s linear infinite;
+    -o-animation: 
+        rota 50s linear infinite;
+    animation: 
+        rota 50s linear infinite;
+}
+
+@-webkit-keyframes rota {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rota {
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes rota {
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-o-keyframes rota {
+    to { -o-transform: rotate(360deg); }
+}
+
+@keyframes rota {
+    to { transform: rotate(360deg); }
+}
+
+    
+
 
           
         
